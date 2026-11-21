@@ -214,8 +214,8 @@ oligobot/
 │   ├── merger_of_indexes.py    # Index merger utility
 │   └── retrieve.py             # Retrieval functions
 │
-└── tests/                      # Test suite
-    ├── conftest.py
+└── Tests/                      # Test suite
+    ├── test_input_validator.py
     └── ...
 ```
 
