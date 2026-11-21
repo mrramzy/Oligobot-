@@ -58,8 +58,11 @@ subscription_data.json
 book_aliases.json
 
 # ==========================================
-# Backups and temp files
+# Backups, Archive and Personal Files
 # ==========================================
+_archive/
+archive/
+MDs/
 backup.tar.gz
 *_backup.py
 *_BACKUP*

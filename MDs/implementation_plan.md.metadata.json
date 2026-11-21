@@ -1,6 +1,0 @@
-{
-  "artifactType": "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
-  "summary": "Architectural plan for debugging FAISS embedding issues and mapping the clinical multi-modal RAG system.",
-  "updatedAt": "2026-06-10T13:14:53.418823200Z",
-  "requestFeedback": true
-}
