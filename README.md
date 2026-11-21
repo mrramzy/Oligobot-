@@ -236,5 +236,8 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 ---
 
 <p align="center">
-  <b>OLIGOBOT V10</b> · Medical RAG Engine · Built with 🩺 for clinical laboratory professionals
+  <b>OLIGOBOT</b> · Medical RAG Engine · Built with heart for clinical laboratory professionals and Medical Experts
+</p>
+<p align="center">
+  <b>Hooman Ramezany</b> 
 </p>
