@@ -1,0 +1,38 @@
+# --- Core Frameworks ---
+python-dotenv
+python-telegram-bot
+structlog
+nest_asyncio
+tenacity
+
+# --- AI & LLM Providers ---
+openai
+google-generativeai
+llama-parse
+
+# --- LangChain Ecosystem ---
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-google-genai
+langchain-huggingface
+
+# --- Vector Stores & Embeddings ---
+faiss-cpu
+chromadb
+langchain-chroma
+sentence-transformers
+
+# --- Data Processing & PDF ---
+PyPDF2
+Pillow
+unstructured[pdf]
+tqdm
+
+# --- Database & Cache ---
+redis
+
+# --- Optional / Advanced (For Marker & DeepSeek) ---
+# marker-pdf  <-- (نصب این ممکن است سنگین باشد، فقط اگر از حالت marker استفاده می‌کنی نصب کن)
+marker-pdf

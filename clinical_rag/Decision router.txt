@@ -1,0 +1,52 @@
+          [ File Manager ]                                                                                                     
+                      |
+		      |
+                      |
+             [ Index Router ]
+           /                       \
+   [ FAISS Engine ]   [ Chroma Engine ]
+
+
+📌 این یعنی:
+
+فردا می‌تونی:
+
+Elasticsearch اضافه کنی
+
+Milvus اضافه کنی
+
+حتی فقط یکی رو خاموش کنی
+
+----------------------------------------------------------------
+منطق تصمیم (نسخه تمیز و واقعی)
+
+مثلاً:
+
+Rule 1 – کتاب سنگین
+
+اگر:
+
+PDF > 200 صفحه
+
+اسم شامل Textbook | Atlas
+
+نیاز به e-page / table / figure
+
+➡️ FAISS + Google embedding
+
+Rule 2 – guideline / SOP
+
+اگر:
+
+PDF < 100 صفحه
+
+شامل guideline | SOP | protocol
+
+آپدیت‌پذیر
+
+➡️ Chroma + local embedding
+
+Rule 3 – mixed / نامشخص
+
+➡️ dual-index (کم‌حجم)
+یا manual override

@@ -1,0 +1,109 @@
+
+{
+  "schema_name": "Clinical Laboratory Knowledge Schema",
+  "schema_version": "1.0",
+  "description": "یک schema یکپارچه برای سیستم‌های RAG در حوزه علوم آزمایشگاهی بالینی و تحقیقاتی",
+
+  "required_fields": [
+    "domain",
+    "subdomain",
+    "content_type",
+    "target_audience",
+    "language",
+    "source",
+    "year"
+  ],
+
+  "optional_fields": [
+    "test_name",
+    "sample_type",
+    "method",
+    "reference_range",
+    "related_conditions",
+    "educational_level",
+    "is_diagnostic",
+    "is_research"
+  ],
+
+  "allowed_values": {
+    "domain": [
+      "hematology",
+      "clinical_biochemistry",
+      "urinalysis",
+      "parasitology",
+      "endocrinology",
+      "microbiology",
+      "mycology",
+      "cytopathology",
+      "genetics",
+      "serology",
+      "transfusion_medicine",
+      "immunohematology",
+      "phlebotomy",
+      "physiology",
+      "anatomy",
+      "clinical_medicine"
+    ],
+
+    "subdomain": {
+      "hematology": [
+        "cbc", "coagulation", "hemoglobinopathy", "flow_cytometry", "bone_marrow"
+      ],
+      "clinical_biochemistry": [
+        "liver_function", "renal_function", "lipid_profile", "electrolytes", "cardiac_markers"
+      ],
+      "microbiology": [
+        "bacteriology", "virology", "antibiotic_susceptibility", "culture", "molecular_micro"
+      ],
+      "transfusion_medicine": [
+        "blood_typing", "crossmatch", "component_therapy", "adverse_reactions"
+      ],
+      "genetics": [
+        "karyotyping", "pcr", "ngs", "fish", "carrier_screening"
+      ],
+      "physiology": [
+        "renal_physiology", "acid_base_balance", "endocrine_feedback"
+      ],
+      "clinical_medicine": [
+        "differential_diagnosis", "treatment_guidelines", "case_studies"
+      ]
+    },
+
+    "content_type": [
+      "diagnostic_criteria",
+      "reference_range",
+      "test_interpretation",
+      "sample_handling",
+      "methodology",
+      "educational_content",
+      "research_protocol",
+      "sop",
+      "case_report",
+      "guideline"
+    ],
+
+    "target_audience": [
+      "lab_technician",
+      "medical_student",
+      "resident",
+      "pathologist",
+      "clinician",
+      "researcher",
+      "nurse",
+      "phlebotomist"
+    ],
+
+    "language": ["fa", "en"],
+
+    "source_types": [
+      "CLSI_guideline",
+      "WHO_manual",
+      "Harrison_Principles",
+      "Tietz_Textbook",
+      "MOH_Iran_protocol",
+      "CAP_checklist",
+      "peer_reviewed_article",
+      "institutional_sop"
+    ]
+  }
+}

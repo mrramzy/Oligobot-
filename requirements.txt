@@ -1,0 +1,98 @@
+# OLIGOBOT V10 - Complete Requirements
+# Updated: July 11, 2026
+# Python 3.11+
+
+# ==========================================
+# 🤖 Core Telegram & Bot Framework
+# ==========================================
+python-telegram-bot>=21.6
+python-dotenv>=1.0.0
+python-dateutil>=2.9.0
+redis>=5.0.0
+structlog>=24.1.0
+
+# ==========================================
+# 🤖 AI Providers (OpenAI, Gemini, DeepSeek)
+# ==========================================
+openai>=1.50.0
+google-genai>=2.0.0
+google-generativeai>=0.8.0
+google-api-python-client>=2.140.0
+google-auth>=2.34.0
+google-auth-httplib2>=0.2.0
+# Note: DeepSeek uses OpenAI SDK (already included above)
+
+# ==========================================
+# 🔗 LangChain Ecosystem
+# ==========================================
+langchain>=1.2.0
+langchain-core>=1.2.5
+langchain-community>=0.4.0
+langchain-google-genai>=2.0.0
+langchain-text-splitters>=1.0.0
+langchain-huggingface>=1.0.0
+langchain-chroma>=0.1.0
+langsmith>=0.5.0
+
+# ==========================================
+# 🔍 Vector Search & Embeddings
+# ==========================================
+faiss-cpu>=1.13.0
+sentence-transformers>=5.0.0
+scikit-learn>=1.5.0
+rank-bm25>=0.2.2
+torch>=2.2.0
+
+# ==========================================
+# 📚 Document Processing
+# ==========================================
+pillow>=10.2.0,<12.0.0
+pytz>=2024.1
+pandas>=2.2.0
+openpyxl>=3.1.0
+python-docx>=1.1.0
+PyMuPDF>=1.24.0
+PyPDF2>=3.0.0
+beautifulsoup4>=4.14.0
+lxml>=5.3.0
+
+# ==========================================
+# 📋 Text Processing & NLP
+# ==========================================
+nltk>=3.9.0
+langdetect>=1.0.9
+tqdm>=4.66.0
+
+# ==========================================
+# 🛠️ Additional Utilities
+# ==========================================
+numpy>=1.26.0  # کد شامل patch برای NumPy 2.0 compatibility است — بدون upper bound
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+requests>=2.32.0
+PyYAML>=6.0.2
+aiohttp>=3.10.0
+httpx>=0.27.0
+emoji>=2.14.0
+decorator>=5.0.0
+click>=8.1.0
+cryptography>=43.0.0
+bcrypt>=4.2.0
+coloredlogs>=15.0.1
+nest-asyncio>=1.6.0
+tenacity>=8.5.0
+tiktoken>=0.7.0
+
+# ==========================================
+# 🧪 Testing Frameworks
+# ==========================================
+pytest>=8.0.0
+pytest-asyncio>=0.24.0
+pytest-cov>=5.0.0
+
+# ==========================================
+# 🖥️ Admin Dashboard
+# ==========================================
+fastapi>=0.115.0
+uvicorn>=0.30.0
+python-multipart>=0.0.9

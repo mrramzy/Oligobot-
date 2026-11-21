@@ -1,0 +1,74 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+RAGBot/
+
+# IDE / Editor
+.vscode/
+.idea/
+.idx/
+
+# Secrets
+.env
+.env.*
+
+# Indexes and heavy data (built locally, mounted as volumes)
+brain_index/
+chroma_clinical_v2/
+chroma_vision/
+eadl_index/
+eadl_index_TEST/
+
+# Knowledge base (large PDFs)
+knowledge_base/
+
+# Logs
+logs/
+*.log
+
+# User data (PII)
+user_profiles.json
+eadl_memory.json
+eadl_cases.json
+eadl_config.json
+subscription_data.json
+book_aliases.json
+
+# Backups
+backup.tar.gz
+*_backup.py
+*_BACKUP*
+
+# Test files
+test*.py
+tests/
+.pytest_cache/
+
+# Documentation
+MDs/
+*.md
+!README.md
+
+# Build artifacts
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+Thumbs.db

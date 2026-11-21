@@ -1,0 +1,53 @@
+# OLIGOBOT V10 - Docker Compose
+# One-click local/dev deployment
+
+services:
+  bot:
+    build: .
+    container_name: oligobot
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      # Persistent data (indexes, logs, user data)
+      - ./brain_index:/app/brain_index
+      - ./chroma_clinical_v2:/app/chroma_clinical_v2
+      - ./eadl_index:/app/eadl_index
+      - ./logs:/app/logs
+      - ./user_profiles.json:/app/user_profiles.json
+      - ./subscription_data.json:/app/subscription_data.json
+      - ./user_memory.json:/app/user_memory.json
+      - ./eadl_memory.json:/app/eadl_memory.json
+      - ./eadl_cases.json:/app/eadl_cases.json
+      - ./eadl_config.json:/app/eadl_config.json
+      - ./book_aliases.json:/app/book_aliases.json
+      - ./entity_index.json:/app/entity_index.json
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - oligobot-net
+    ports:
+      - "8080:8080"
+
+  redis:
+    image: redis:7-alpine
+    container_name: oligobot-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - oligobot-net
+
+volumes:
+  redis_data:
+
+networks:
+  oligobot-net:
+    driver: bridge
