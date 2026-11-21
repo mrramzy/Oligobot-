@@ -1,4 +1,4 @@
-# 🤖 OLIGOBOT V10 — Medical RAG Telegram Bot
+# 🤖 OLIGOBOT — Medical RAG Telegram Bot
 
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
