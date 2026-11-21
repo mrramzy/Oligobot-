@@ -73,7 +73,7 @@ flowchart TB
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/oligobot.git
+git clone https://github.com/mrramzy/oligobot-.git
 cd oligobot
 
 # 2. Create virtual environment
@@ -123,7 +123,7 @@ The Docker setup includes:
 |----------|:--------:|---------|-------------|
 | `TELEGRAM_TOKEN` | ✅ | — | Bot token from [@BotFather](https://t.me/BotFather) |
 | `ADMIN_ID` | ✅ | — | Your Telegram user ID for admin access |
-| `ADMIN_SECRET` | ❌ | `oligobot_admin_2026` | Admin dashboard secret key |
+| `ADMIN_SECRET` | ❌ | `change-me-in-production` | Admin dashboard secret key |
 | **AI Providers** *(at least one required)* |
 | `GOOGLE_API_KEY` | ⚡ | — | Google Gemini API key (comma-separated for rotation) |
 | `OPENAI_API_KEY` | ⚡ | — | OpenAI API key |
